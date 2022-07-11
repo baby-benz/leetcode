@@ -1,1 +1,5 @@
-/binary_search/35_search_insert_position/.idea/
+# Ignore IDE files
+**/.idea/
+
+# Ignore build folders
+**/cmake-build-debug/
