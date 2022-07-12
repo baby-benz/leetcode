@@ -12,7 +12,7 @@ int isBadVersion(const int number) {
 }
 
 /// Performs an integer binary search using an external API to determine the search stop point
-/// \param [in] n Integer variable that contains the number of elements (1 \<= n)
+/// \param [in] n Unsigned long integer variable that contains the number of elements (1 \<= n)
 /// \return element found
 unsigned long search(const unsigned long n) {
     unsigned long left = 0;
