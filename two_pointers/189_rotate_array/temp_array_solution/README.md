@@ -1,4 +1,4 @@
-# Temporary array solution
+# Temporary Array Solution
 
 ## This solution:
 
