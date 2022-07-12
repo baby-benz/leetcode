@@ -5,9 +5,14 @@
 #include <malloc.h>
 #include "sorted_squares.h"
 
-int *sortedSquares(const int *nums, const int numsSize, int *returnSize) {
-    int start = 0;
-    int end = numsSize - 1;
+/// Returns a sorted array containing the squares of the elements of the given array
+/// \param [in] nums Integer input array
+/// \param [in] numsSize Unsigned integer variable that contains the number of elements in the array
+/// \param [out] returnSize Unsigned integer variable that contains the number of elements in the array
+/// \return Integer sorted array containing the squares of the elements
+int *sortedSquares(const int *nums, const unsigned int numsSize, unsigned int *returnSize) {
+    unsigned int start = 0;
+    unsigned int end = numsSize - 1;
 
     *returnSize = numsSize;
     int* sortedSquares = (int *) malloc(sizeof(int) * numsSize);
@@ -15,7 +20,7 @@ int *sortedSquares(const int *nums, const int numsSize, int *returnSize) {
     int startSquare = nums[start] * nums[start];
     int endSquare = nums[end] * nums[end];
 
-    for (int i = end; i > 0; i--) {
+    for (unsigned int i = end; i > 0; i--) {
         if (startSquare > endSquare) {
             sortedSquares[i] = startSquare;
             start++;
