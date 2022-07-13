@@ -11,3 +11,4 @@
 - ### [977. Squares of a Sorted Array](two_pointers/977_squares_of_a_sorted_array)
 - ### [189. Rotate Array (Temporary Array Solution [#1])](two_pointers/189_rotate_array/temp_array_solution/solution_1)
 - ### [189. Rotate Array (Temporary Array Solution [#2])](two_pointers/189_rotate_array/temp_array_solution/solution_2)
+- ### [189. Rotate Array (Naive)](two_pointers/189_rotate_array/naive_solution)
