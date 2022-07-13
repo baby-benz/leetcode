@@ -12,4 +12,4 @@
 - ### [189. Rotate Array (Temporary Array Solution [#1])](two_pointers/189_rotate_array/temp_array_solution/solution_1)
 - ### [189. Rotate Array (Temporary Array Solution [#2])](two_pointers/189_rotate_array/temp_array_solution/solution_2)
 - ### [189. Rotate Array (Naive Solution)](two_pointers/189_rotate_array/naive_solution)
-- - ### [189. Rotate Array (Reverse Array Solution)](two_pointers/189_rotate_array/reverse_array_solution)
+- ### [189. Rotate Array (Reverse Array Solution)](two_pointers/189_rotate_array/reverse_array_solution)
