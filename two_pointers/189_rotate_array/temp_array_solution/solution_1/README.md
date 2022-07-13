@@ -1,5 +1,8 @@
 # Temporary Array Solution (#1)
 
+- ### O(n) - time complexity
+- ### O(k) - space
+
 ## This solution:
 
 1. Creates a temporary array with a size equal to the number of elements to be rotated.

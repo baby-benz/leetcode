@@ -1,5 +1,8 @@
 # Temporary Array Solution (#2)
 
+- ### O(n) - time complexity
+- ### O(n) - space
+
 ## This solution:
 
 1. Creates a temporary array with a size equal to the number of input elements.
