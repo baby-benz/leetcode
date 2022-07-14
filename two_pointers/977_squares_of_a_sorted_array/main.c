@@ -5,7 +5,7 @@ int main() {
     const int numSize = 5;
     const int arr[] = {-4, -1, 0, 3, 10};
 
-    int returnSize = 0;
+    unsigned int returnSize = 0;
 
     const int *sortedArr = sortedSquares(arr, numSize, &returnSize);
 
