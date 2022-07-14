@@ -29,5 +29,5 @@ Given an array, rotate the array to the right by k steps, where k is non-negativ
 ## Constraints:
 
 - 1 <= nums.length <= 10<sup>5</sup>
-- -2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> - 1 
+- -2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> - 1
 - 0 <= k <= 10<sup>5</sup>

@@ -26,5 +26,5 @@ You must write an algorithm with **O(log n)** runtime complexity.
 
 - 1 <= nums.length <= 10<sup>4</sup>
 - -10<sup>4</sup> < nums[i], target < 10<sup>4</sup>
-- All the integers in nums are unique.
-- nums is sorted in ascending order.
+- All the integers in nums are unique
+- nums is sorted in ascending order

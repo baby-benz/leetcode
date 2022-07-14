@@ -24,4 +24,4 @@ Given an integer array nums sorted in non-decreasing order, return an array of t
 
 - 1 <= nums.length <= 10<sup>4</sup>
 - -10<sup>4</sup> <= nums[i] <= 10<sup>4</sup>
-- nums is sorted in non-decreasing order.
+- nums is sorted in non-decreasing order
