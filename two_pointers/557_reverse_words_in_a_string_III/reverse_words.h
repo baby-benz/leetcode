@@ -1,0 +1,10 @@
+//
+// Created by baby-benz on 7/14/2022.
+//
+
+#ifndef INC_557_REVERSE_WORDS_IN_A_STRING_III_REVERSE_WORDS_H
+#define INC_557_REVERSE_WORDS_IN_A_STRING_III_REVERSE_WORDS_H
+
+char *reverseWords(char *s);
+
+#endif //INC_557_REVERSE_WORDS_IN_A_STRING_III_REVERSE_WORDS_H
