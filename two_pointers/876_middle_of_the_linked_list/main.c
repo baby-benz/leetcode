@@ -4,6 +4,14 @@
 
 #define list_size 6
 
+void freeList(struct ListNode **list) {
+    while (*list != NULL) {
+        struct ListNode *toDelete = *list;
+        *list = (*list)->next;
+        free(toDelete);
+    }
+}
+
 int main() {
     struct ListNode *head = (struct ListNode*) malloc(sizeof(struct ListNode));
     struct ListNode *next = (struct ListNode*) malloc(sizeof(struct ListNode));
@@ -29,9 +37,7 @@ int main() {
     }
     printf("\n");
 
-    free(head);
-    free(next);
-    free(middle);
+    freeList(&head);
 
     return 0;
 }
