@@ -24,3 +24,4 @@
 ## Sliding Window
 
 - ### [3. Longest Substring Without Repeating Characters](sliding_window/3_longest_substring_without_repeating_characters)
+- ### [# 567. Permutation in String](sliding_window/567_permutation_in_string)
