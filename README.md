@@ -29,3 +29,4 @@
 ## DFS
 
 - ### [733. Flood Fill](dfs/733_flood_fill)
+- ### [695. Max Area of Island](dfs/695_max_area_of_island)
