@@ -25,11 +25,11 @@ struct TreeNode *insertLevelOrder(const int arr[], int i, int n) {
 }
 
 void printInOrder(struct TreeNode *node) {
-    if (node != NULL) {
-        if (node->left != NULL) {
+    if (node) {
+        if (node->left) {
             printf("%d ", node->left->val);
         }
-        if (node->right != NULL) {
+        if (node->right) {
             printf("%d ", node->right->val);
         }
         printInOrder(node->left);

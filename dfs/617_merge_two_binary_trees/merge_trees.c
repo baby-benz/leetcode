@@ -8,11 +8,11 @@
 struct TreeNode *mergeTrees(const struct TreeNode *root1, const struct TreeNode *root2) {
     struct TreeNode *result = (struct TreeNode *) malloc(sizeof(struct TreeNode));
 
-    if (root1 == NULL && root2 == NULL) {
+    if (!root1 && !root2) {
         result = NULL;
-    } else if (root1 == NULL) {
+    } else if (!root1) {
         *result = *root2;
-    } else if (root2 == NULL) {
+    } else if (!root2) {
         *result = *root1;
     } else {
         result->val = root1->val + root2->val;
