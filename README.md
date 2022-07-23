@@ -40,3 +40,4 @@
 
 ## Recursion
 - ### [21. Merge Two Sorted Lists](recursion/21_merge_two_sorted_lists)
+- ### [206. Reverse Linked List](recursion/206_reverse_linked_list)
