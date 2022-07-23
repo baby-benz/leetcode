@@ -5,6 +5,8 @@
 #ifndef INC_542_01_MATRIX_QUEUE_H
 #define INC_542_01_MATRIX_QUEUE_H
 
+#include <stdbool.h>
+
 struct QueueNode {
     int left, right;
 };
@@ -21,6 +23,6 @@ void enqueue(struct Queue *queue, struct QueueNode item);
 
 struct QueueNode dequeue(struct Queue *queue);
 
-int isEmpty(struct Queue *queue);
+bool isEmpty(struct Queue *queue);
 
 #endif //INC_542_01_MATRIX_QUEUE_H

@@ -13,10 +13,6 @@ struct Queue *create(unsigned int capacity) {
     return queue;
 }
 
-int isEmpty(struct Queue *queue) {
-    return (queue->size == 0);
-}
-
 void enqueue(struct Queue *queue, struct QueueNode item) {
     queue->nodes[queue->rear] = item;
     queue->rear++;
@@ -28,4 +24,8 @@ struct QueueNode dequeue(struct Queue *queue) {
     queue->front++;
     queue->size--;
     return item;
+}
+
+bool isEmpty(struct Queue *queue) {
+    return (queue->size == 0);
 }
