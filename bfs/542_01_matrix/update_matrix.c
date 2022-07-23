@@ -41,11 +41,11 @@ unsigned int **updateMatrix(const unsigned int **mat, const unsigned int matSize
     while (!isEmpty(q)) {
         struct QueueNode cur = dequeue(q);
         for (int i = 0; i < 4; i++) {
-            int new_r = cur.left + dir[i][0], new_c = cur.right + dir[i][1];
-            if (new_r >= 0 && new_c >= 0 && new_r < matSize && new_c < matColSize[0]) {
-                if (dist[new_r][new_c] > dist[cur.left][cur.right] + 1) {
-                    dist[new_r][new_c] = dist[cur.left][cur.right] + 1;
-                    struct QueueNode item = {.left = new_r, .right = new_c};
+            int newRow = cur.left + dir[i][0], newCol = cur.right + dir[i][1];
+            if (newRow >= 0 && newCol >= 0 && newRow < matSize && newCol < matColSize[0]) {
+                if (dist[newRow][newCol] > dist[cur.left][cur.right] + 1) {
+                    dist[newRow][newCol] = dist[cur.left][cur.right] + 1;
+                    struct QueueNode item = {.left = newRow, .right = newCol};
                     enqueue(q, item);
                 }
             }
