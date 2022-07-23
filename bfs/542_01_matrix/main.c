@@ -7,7 +7,7 @@
 #define MAT_COL_SIZE 3
 
 const unsigned int matData[MAT_ROW_SIZE][MAT_COL_SIZE] = {0, 0, 0, 0, 1, 0, 0, 0, 0};
-const unsigned int imageColSize[MAT_ROW_SIZE] = {MAT_COL_SIZE, MAT_COL_SIZE, MAT_COL_SIZE};
+const unsigned int matColSize[MAT_ROW_SIZE] = {MAT_COL_SIZE, MAT_COL_SIZE, MAT_COL_SIZE};
 
 int main() {
     unsigned int **mat = (unsigned int **) malloc(sizeof(unsigned int *) * MAT_ROW_SIZE);
@@ -21,7 +21,7 @@ int main() {
     unsigned int returnMatSize;
     unsigned int *returnColumnSizes;
 
-    unsigned int **dist = updateMatrix(mat, MAT_ROW_SIZE, imageColSize, &returnMatSize, &returnColumnSizes);
+    unsigned int **dist = updateMatrix(mat, MAT_ROW_SIZE, matColSize, &returnMatSize, &returnColumnSizes);
 
     for (int i = 0; i < returnMatSize; i++) {
         for (int j = 0; j < returnColumnSizes[i]; j++) {
