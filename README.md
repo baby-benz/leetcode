@@ -36,3 +36,4 @@
 ## BFS
 - ### [116. Populating Next Right Pointers in Each Node](bfs/116_populating_next_right_pointers_in_each_node)
 - ### [542. 01 Matrix](bfs/542_01_matrix)
+- ### [994. Rotting Oranges](bfs/994_rotting_oranges)
