@@ -3,7 +3,7 @@
 //
 
 #include <malloc.h>
-#include <stdio.h>
+#include <memory.h>
 #include "combine.h"
 
 unsigned long long int fact(unsigned int n) {
@@ -14,23 +14,23 @@ unsigned long long int fact(unsigned int n) {
     return fact;
 }
 
-unsigned int backtrackCombine(unsigned int **combs, unsigned int *curComb, const unsigned int n, const unsigned int k, const unsigned int start, const unsigned int end, unsigned int curCombPos, unsigned int combsPos) {
-    if(end == 0) {
-        combs[combsPos] = (unsigned int *) malloc(sizeof(unsigned int) * k);
-        for (int i = 0; i < k; i++) {
-            combs[combsPos][i] = curComb[i];
-        }
-        return combsPos;
+void backtrackCombine(unsigned int **combs, unsigned int *curComb, const unsigned int n, const unsigned int k,
+                      const unsigned int start, const unsigned int end, unsigned int curCombPos,
+                      unsigned int *combsPos) {
+    if (end == 0) {
+        combs[*combsPos] = (unsigned int *) malloc(sizeof(unsigned int) * k);
+        memcpy(combs[*combsPos], curComb, sizeof(unsigned int) * k);
+        (*combsPos)++;
+        return;
     }
-    for(unsigned int i = start; i <= n - end + 1; i++) {
+    for (unsigned int i = start; i <= n - end + 1; i++) {
         curComb[curCombPos] = i;
-        combsPos = backtrackCombine(combs, curComb, n, k, i + 1, end - 1, curCombPos + 1, combsPos);
-        combsPos++;
+        backtrackCombine(combs, curComb, n, k, i + 1, end - 1, curCombPos + 1, combsPos);
     }
-    return combsPos - 1;
 }
 
-unsigned int **combine(const unsigned int n, const unsigned int k, unsigned int *returnSize, unsigned int **returnColumnSizes) {
+unsigned int **
+combine(const unsigned int n, const unsigned int k, unsigned int *returnSize, unsigned int **returnColumnSizes) {
     unsigned long long int nFact = fact(n), kFact = fact(k), nMinusKFact = fact(n - k);
 
     unsigned int combsNum = nFact / (kFact * nMinusKFact);
@@ -46,7 +46,9 @@ unsigned int **combine(const unsigned int n, const unsigned int k, unsigned int 
     unsigned int **combs = (unsigned int **) malloc(sizeof(unsigned int *) * combsNum);
     unsigned int *curComb = (unsigned int *) malloc(sizeof(unsigned int) * k);
 
-    backtrackCombine(combs, curComb, n, k, 1, k, 0, 0);
+    unsigned int combsPos = 0;
+
+    backtrackCombine(combs, curComb, n, k, 1, k, 0, &combsPos);
 
     return combs;
 }
