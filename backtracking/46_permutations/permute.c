@@ -52,5 +52,7 @@ permute(const int *nums, const unsigned int numsSize, unsigned int *returnSize, 
 
     backtrackPermute(perms, curPerm, numsSize, 0, numsSize, &permsPos);
 
+    free(curPerm);
+
     return perms;
 }

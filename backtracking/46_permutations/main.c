@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <malloc.h>
 #include "permute.h"
 
 #define NUMS_SIZE 3
@@ -15,8 +16,11 @@ int main() {
         for (unsigned int j = 0; j < returnColumnSizes[i]; j++) {
             printf("%d ", permutations[i][j]);
         }
+        free(permutations[i]);
         printf("\n");
     }
+
+    free(permutations);
 
     return 0;
 }
