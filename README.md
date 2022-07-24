@@ -44,3 +44,4 @@
 
 ## Backtracking
 - ### [77. Combinations](backtracking/77_combinations)
+- ### [46. Permutations](backtracking/46_permutations)
