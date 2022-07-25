@@ -46,3 +46,6 @@
 - ### [77. Combinations](backtracking/77_combinations)
 - ### [46. Permutations](backtracking/46_permutations)
 - ### [784. Letter Case Permutation](backtracking/784_letter_case_permutation)
+
+## Dynamic Programming
+- ### [70. Climbing Stairs](dynamic_programming/70_climbing_stairs)
