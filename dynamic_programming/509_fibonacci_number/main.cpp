@@ -22,6 +22,6 @@ public:
 };
 
 int main() {
-    std::cout << Solution::fib(4) << "\n";
+    std::cout << Solution::fib(4) << std::endl;
     return 0;
 }
