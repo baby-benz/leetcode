@@ -8,10 +8,10 @@ public:
             return nums[0];
         }
 
-        int prev = 0, cur = 0;
+        unsigned int prev = 0, cur = 0;
 
         for (int num : nums) {
-            int tmp = cur;
+            unsigned int tmp = cur;
             cur = std::max(prev + num, cur);
             prev = tmp;
         }
