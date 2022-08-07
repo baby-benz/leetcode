@@ -57,3 +57,4 @@
 - ### [45. Jump Game II](dynamic_programming/45_jump_game_II)
 - ### [55. Jump Game](dynamic_programming/55_jump_game)
 - ### [53. Maximum Subarray](dynamic_programming/53_maximum_subarray)
+- ### [120. Triangle](dynamic_programming/120_triangle)
