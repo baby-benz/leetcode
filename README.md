@@ -58,3 +58,6 @@
 - ### [55. Jump Game](dynamic_programming/55_jump_game)
 - ### [53. Maximum Subarray](dynamic_programming/53_maximum_subarray)
 - ### [120. Triangle](dynamic_programming/120_triangle)
+
+## Bit Manipulation
+- ### [231. Power of Two](bit_manipulation/231_power_of_two)
