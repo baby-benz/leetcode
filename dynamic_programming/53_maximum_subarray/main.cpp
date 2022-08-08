@@ -7,7 +7,7 @@ public:
         int curMax, max;
         max = curMax = nums[0];
 
-        for(int i = 1; i < nums.size(); i++){
+        for (unsigned int i = 1; i < nums.size(); i++) {
             curMax = std::max(nums[i] + curMax, nums[i]);
             max = std::max(max, curMax);
         }
