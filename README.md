@@ -63,3 +63,4 @@
 - ### [231. Power of Two](bit_manipulation/231_power_of_two)
 - ### [191. Number of 1 Bits](bit_manipulation/191_number_of_1_bits)
 - ### [190. Reverse Bits](bit_manipulation/190_reverse_bits)
+- ### [136. Single Number](bit_manipulation/136_single_number)
