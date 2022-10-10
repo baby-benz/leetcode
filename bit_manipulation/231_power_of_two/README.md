@@ -12,13 +12,13 @@ An integer __n__ is a power of two, if there exists an integer x such that __n =
 
     Input: n = 1
     Output: true
-    Explanation: 2<sup>0</sup> = 1
+    Explanation: 2⁰ = 1
 
 ## Example 2:
 
     Input: n = 16
     Output: true
-    Explanation: 2<sup>4</sup> = 16
+    Explanation: 2⁴ = 16
 
 ## Example 3:
 
